@@ -24,19 +24,16 @@ const createBoxes = (amount) => {
 
 btnCreate.addEventListener("click", () => {
   let boxesToAdd = createBoxes(inputEl.value);
-  console.log(inputEl.value);
   boxesEl.append(...boxesToAdd);
 });
 
 
-btnDestroy.addEventListener("click", () => {
-  destroyBoxes.call();
-});
+
 
 const destroyBoxes = () => {
   boxesEl.innerHTML = "";
 };
 
-
+btnDestroy.addEventListener("click", destroyBoxes);
 
 

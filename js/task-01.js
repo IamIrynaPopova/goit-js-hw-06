@@ -4,7 +4,7 @@ const amountCategories = categoriesItems.length;
 console.log('Number of categories:', amountCategories);
 
 const categoriesItemsEl = document.querySelectorAll(".item");
-const categoriesName = categoriesItemsEl.forEach((category) =>
+categoriesItemsEl.forEach((category) =>
   console.log(
     "Category:",
     category.firstElementChild.textContent,

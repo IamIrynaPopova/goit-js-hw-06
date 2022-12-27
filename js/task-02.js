@@ -8,11 +8,13 @@ const ingredients = [
 ];
 
 const listEl = document.getElementById("ingredients");
-console.log(listEl);
- 
+const ingredientArray = [];
+
 for(const ingredient of ingredients){
  const createEl = document.createElement("li");
  createEl.textContent = ingredient;
- createEl.classList.add("item");
- listEl.append(createEl); 
-}
+  createEl.classList.add("item");
+  ingredientArray.push(createEl);
+};
+
+ listEl.append(...ingredientArray); 
